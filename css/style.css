@@ -27,11 +27,12 @@ main {
     display: none;
 }
 
-#my_button {
+.inputs {
     background-color: rgb(82, 82, 255);
     color: white;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
+    margin: 0 3rem;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -39,14 +40,27 @@ main {
 
 .square {
     border: 2px solid white;
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
     align-items: center;
+}
+
+.size_1 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.size_2 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.size_3 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 }
 
 .activated {
