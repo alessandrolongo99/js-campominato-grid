@@ -13,13 +13,15 @@ function generateNewSquare() {
 button.addEventListener('click', function () {
     document.getElementById('container').style.display = 'flex';
 
+    container.innerHTML = null;
+
     if (selection.value == 0) {
         for (let i = 0; i < 49; i++) {
             const newSquare = generateNewSquare();
             newSquare.classList.add('size_1');
 
             newSquare.addEventListener('click', function () {
-                newSquare.classList.toggle('activated');
+                newSquare.classList.add('activated');
 
                 console.log(newSquare.innerHTML);
             });
@@ -36,7 +38,7 @@ button.addEventListener('click', function () {
             newSquare.classList.add('size_2');
 
             newSquare.addEventListener('click', function () {
-                newSquare.classList.toggle('activated');
+                newSquare.classList.add('activated');
 
                 console.log(newSquare.innerHTML);
             });
@@ -53,7 +55,7 @@ button.addEventListener('click', function () {
             newSquare.classList.add('size_3');
 
             newSquare.addEventListener('click', function () {
-                newSquare.classList.toggle('activated');
+                newSquare.classList.add('activated');
 
                 console.log(newSquare.innerHTML);
             });
